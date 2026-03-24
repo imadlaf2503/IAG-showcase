@@ -20,45 +20,44 @@
 ### 🌟 Vision du Projet
 Développé en collaboration avec **STaR-AI**, ce projet vise à briser les barrières géographiques de l'accès aux soins. **IAG-Cardio** permet de détecter des crises cardiaques en temps réel, sans cardiologue sur place, spécifiquement conçu pour les zones rurales (notamment en Afrique).
 
-### 🚀 Deux Solutions Complémentaires
-1.  **IAG-Cardio :** Interface de diagnostic génératif où un infirmier dicte les symptômes vocalement pour obtenir une analyse complète.
-2.  **Cardio-Spectra v4 :** Pipeline d'analyse d'ECG 12 dérivations capable de détecter **10 pathologies cardiaques** distinctes.
-
 ---
 
-## 📸 Performances & Interfaces
+## 📸 Aperçu & Validation Scientifique
 
-> **Explicabilité (XAI) :** Une IA médicale ne peut être adoptée sans être comprise. Nous utilisons **SHAP** pour expliquer chaque décision de l'IA.
+> **Explicabilité (XAI) :** Une IA médicale ne peut être adoptée sans être comprise. Nous utilisons **SHAP** pour expliquer chaque décision de l'IA et garantir une confiance totale des praticiens.
 
-| 📉 Matrice de Confusion (r1) | 📊 F1-Score & Rappel (r2) |
+### 📊 Performances & Métriques d'IA
+| Matrice de Confusion (r1) | F1-Score & Rappel (r2) |
 |:---:|:---:|
-| <img src="assets/screenshots/r1.PNG" width="400" /> | <img src="assets/screenshots/r2.PNG" width="400" /> |
+| <img src="assets/screenshots/r1.png" width="450" /> | <img src="assets/screenshots/r2.png" width="450" /> |
+| *Validation de la précision des diagnostics* | *Métriques de performance par classe de pathologie* |
 
-### Aperçu de l'Application
-| Dashboard Principal | Analyse ECG | Diagnostic Vocal |
+### 📱 Interface Application (Dashboard & Vocal)
+| Dashboard Principal (d1) | Analyse ECG (d2) | Détails Diagnostic (d3) |
 |:---:|:---:|:---:|
-| <img src="assets/screenshots/d1.PNG" width="250" /> | <img src="assets/screenshots/d2.PNG" width="250" /> | <img src="assets/screenshots/v1.PNG" width="250" /> |
+| <img src="assets/screenshots/dossierpatient.png" width="500" /> | <img src="assets/screenshots/ECGinterface.png" width="500" /> | <img src="assets/screenshots/diagnosticexemple.png" width="500" /> |
+
+| Entrée Vocale (v1) |
+|:---:|
+| <img src="assets/screenshots/ajouterpatient.png" width="500" /> |
+| *Saisie assistée par dictée vocale pour les infirmiers* |
 
 ---
+
+## 🚀 Deux Solutions Complémentaires
+1.  **IAG-Cardio :** Interface de diagnostic génératif où un infirmier dicte les symptômes vocalement pour obtenir une analyse complète basée sur **LLaMA 3.3**.
+2.  **Cardio-Spectra v4 :** Pipeline d'analyse d'ECG 12 dérivations capable de détecter **10 pathologies cardiaques** distinctes avec un **AUC de 0.99**.
 
 ## 🛠️ Stack Technologique High-End
-
-* **Large Language Models (LLM) :** LLaMA 3.3 + GPT-OSS (Diagnostic génératif).
+* **LLM :** LLaMA 3.3 + GPT-OSS (Diagnostic génératif).
 * **Machine Learning :** Random Forest calibré pour la classification ECG.
-* **Interprétabilité (XAI) :** SHAP (Shapley Additive Explanations).
-* **Frontend & Backend :** Next.js (React) avec NeonDB (PostgreSQL).
-* **Performance :** AUC jusqu'à **0.99** sur les arythmies.
-
----
-
-## 🧠 Enseignements Clés
-* **Explicabilité > Précision :** Un médecin n'utilisera jamais une "boîte noire". L'interprétabilité est la clé de la confiance.
-* **Adaptation Locale :** L'IA médicale doit être adaptée aux réalités locales (infrastructures, types de symptômes reportés) et non simplement calquée sur les modèles européens.
+* **XAI :** SHAP (Shapley Additive Explanations) pour l'interprétabilité.
+* **Web :** Next.js / NeonDB (Production-ready).
 
 ---
 
 ## 👥 L'Équipe (Centrale Lille - M2 MIAS)
-Projet réalisé en collaboration étroite par :
+Projet réalisé avec rigueur par :
 * **Edouard Lansiaux**
 * **Aurelien Loison**
 * **Hugo Kazzi**
@@ -74,4 +73,4 @@ Copyright © 2026 **Projet IAG-Cardio / Centrale Lille / STaR-AI**.
 Ce dépôt est une **présentation publique**. Le code source, les modèles pré-entraînés et les datasets médicaux sont strictement confidentiels et protégés par les accords de partenariat avec STaR-AI. Toute reproduction est interdite.
 
 ---
-**Contact :** [Ton Email] | [Lien vers ton LinkedIn]
+**Contact :** [lafendiabdallahimad@gmail.com] | [https://www.linkedin.com/in/abdallah-imad-lafendi-476803326/]
